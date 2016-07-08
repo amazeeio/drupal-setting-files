@@ -1,0 +1,14 @@
+deploy_tasks:
+  development:
+    after_deploy:
+      - cd $webroot && drush -y updb --cache-clear=0
+      - cd $webroot && drush -y cc all
+  production:
+    after_deploy:
+      - cd $webroot && drush -y updb --cache-clear=0
+      - cd $webroot && drush -y cc all
+
+shared:
+  production:
+    - src: files
+      dst: public/sites/default/files
