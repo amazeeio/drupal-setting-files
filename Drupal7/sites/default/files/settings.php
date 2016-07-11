@@ -71,14 +71,14 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 
 // Loading settings for all environment types.
-if (file_exists(__DIR__ . '/settings.all.php')) {
-  include __DIR__ . '/settings.all.php';
+if (file_exists(__DIR__ . '/all.settings.php')) {
+  include __DIR__ . '/all.settings.php';
 }
 
 // Environment specific settings files.
 if(getenv('AMAZEEIO_SITE_ENVIRONMENT')){
-  if (file_exists(__DIR__ . '/settings.' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.php')) {
-    include __DIR__ . '/settings.' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.php';
+  if (file_exists(__DIR__ . '/' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.settings.php')) {
+    include __DIR__ . '/' . getenv('AMAZEEIO_SITE_ENVIRONMENT') . '.settings.php';
   }
 }
 
