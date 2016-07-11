@@ -1,7 +1,6 @@
 <?php
 
 $sitename = '';   // use the username on our servers like testsite_ch
-$options['newrelic-api-key'] = '';   // request this from the Amazee.io team
 $options['deploy-repository'] = ''; // git repository that should be deployed from, like git@github.com:org/site.git
 
 // Don't change anything here, it's magic!
