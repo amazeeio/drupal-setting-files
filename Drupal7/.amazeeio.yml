@@ -11,4 +11,4 @@ deploy_tasks:
 shared:
   production:
     - src: files
-      dst: public/sites/default/files
+      dst: sites/default/files
