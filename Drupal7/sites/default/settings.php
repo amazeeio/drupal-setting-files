@@ -64,10 +64,14 @@ if (getenv('AMAZEEIO_VARNISH_HOSTS') && getenv('AMAZEEIO_VARNISH_SECRET')) {
   $conf['varnish_version'] = 3;
 }
 
-
 ### Base URL
 if (getenv('AMAZEEIO_BASE_URL')) {
   $base_url = getenv('AMAZEEIO_BASE_URL');
+}
+
+### Temp directory
+if (getenv('AMAZEEIO_TMP_PATH')) {
+  $conf['file_temporary_path'] = getenv('AMAZEEIO_TMP_PATH');
 }
 
 // Loading settings for all environment types.
