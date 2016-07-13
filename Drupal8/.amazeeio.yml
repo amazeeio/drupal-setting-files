@@ -1,0 +1,14 @@
+deploy_tasks:
+  development:
+    after_deploy:
+      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
+      - cd $AMAZEEIO_WEBROOT && drush -y cr
+  production:
+    after_deploy:
+      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
+      - cd $AMAZEEIO_WEBROOT && drush -y cr
+
+shared:
+  production:
+    - src: files
+      dst: sites/default/files
