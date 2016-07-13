@@ -57,11 +57,6 @@ $settings['trusted_host_patterns'] = array(
   '^' . str_replace('.', '\.', getenv('AMAZEEIO_SITE_URL')) . '$',
 );
 
-### Base URL
-if (getenv('AMAZEEIO_BASE_URL')) {
-  $base_url = getenv('AMAZEEIO_BASE_URL');
-}
-
 ### Temp directory
 if (getenv('AMAZEEIO_TMP_PATH')) {
   $config['system.file']['path']['temporary'] = getenv('AMAZEEIO_TMP_PATH');
