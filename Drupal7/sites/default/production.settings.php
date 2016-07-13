@@ -25,3 +25,7 @@ $conf['preprocess_css'] = 1;
 
 // Aggregate JavaScript files on
 $conf['preprocess_js'] = 1;
+
+// Disabling stage_file_proxy on production, with that the module can be enabled even on production
+$conf['stage_file_proxy_origin'] = false;
+$conf['stage_file_proxy_origin_dir'] = false;
