@@ -1,3 +1,5 @@
+sitegroup: replaceme
+
 deploy_tasks:
   development:
     after_deploy:
