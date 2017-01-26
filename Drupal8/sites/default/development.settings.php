@@ -17,10 +17,10 @@ $config['google_analytics.settings']['account'] = 'UA-XXXXXXXX-YY';
 // Expiration of cached pages to 0
 $config['system.performance']['cache']['page']['max_age'] = 0;
 
-// Aggregate CSS files on
+// Aggregate CSS files off
 $config['system.performance']['css']['preprocess'] = 0;
 
-// Aggregate JavaScript files on
+// Aggregate JavaScript files off
 $config['system.performance']['js']['preprocess'] = 0;
 
 // Stage file proxy URL from production URL
