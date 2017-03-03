@@ -61,7 +61,7 @@ if (getenv('AMAZEEIO_VARNISH_HOSTS') && getenv('AMAZEEIO_VARNISH_SECRET')) {
   $conf['reverse_proxy_addresses'] = array_merge(explode(',', getenv('AMAZEEIO_VARNISH_HOSTS')), array('127.0.0.1'));
   $conf['varnish_control_terminal'] = implode($varnish_hosts, " ");
   $conf['varnish_control_key'] = getenv('AMAZEEIO_VARNISH_SECRET');
-  $conf['varnish_version'] = 3;
+  $conf['varnish_version'] = 4;
 }
 
 ### Base URL
