@@ -6,7 +6,7 @@ if (empty($aliases_stub)) {
     curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_URL, 'https://raw.githubusercontent.com/amazeeio/drush-aliases/master/aliases.drushrc.php.stub?' . rand(0, 99999999999));
+    curl_setopt($ch, CURLOPT_URL, 'https://drush-alias.amazeeio.cloud/aliases.drushrc.php.stub');
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
     $aliases_stub = curl_exec($ch);
     curl_close($ch);
