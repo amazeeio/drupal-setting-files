@@ -3,12 +3,12 @@ sitegroup: replaceme
 deploy_tasks:
   development:
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
-      - cd $AMAZEEIO_WEBROOT && drush -y cc all
+      - drush -y updb --cache-clear=0
+      - drush -y cc all
   production:
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
-      - cd $AMAZEEIO_WEBROOT && drush -y cc all
+      - drush -y updb --cache-clear=0
+      - drush -y cc all
 
 shared:
   production:
