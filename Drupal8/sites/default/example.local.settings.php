@@ -10,3 +10,7 @@
 // Disable render caches, necessary for twig files to be reloaded on every page view
 $settings['cache']['bins']['render'] = 'cache.backend.null';
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+
+// Disable CSS/JS aggregation.
+$config['system.performance']['css']['preprocess'] = 0;
+$config['system.performance']['js']['preprocess'] = 0;

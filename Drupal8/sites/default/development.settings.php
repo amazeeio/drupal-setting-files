@@ -17,11 +17,9 @@ $config['google_analytics.settings']['account'] = 'UA-XXXXXXXX-YY';
 // Expiration of cached pages to 0
 $config['system.performance']['cache']['page']['max_age'] = 0;
 
-// Aggregate CSS files off
-$config['system.performance']['css']['preprocess'] = 0;
-
-// Aggregate JavaScript files off
-$config['system.performance']['js']['preprocess'] = 0;
+// Aggregate CSS/JS files to not confuse clients with browser cache issues.
+$config['system.performance']['css']['preprocess'] = 1;
+$config['system.performance']['js']['preprocess'] = 1;
 
 // Stage file proxy URL from production URL
 if(getenv('AMAZEEIO_PRODUCTION_URL')){
