@@ -28,7 +28,7 @@ if(getenv('AMAZEEIO_SITENAME')){
     'port' => getenv('AMAZEEIO_DB_PORT'),
     'prefix' => '',
   );
-}
+
 
 ### amazee.io solr connection (will only be loaded if solr is enabled)
 if(getenv('AMAZEEIO_SOLR_HOST') && getenv('AMAZEEIO_SOLR_PORT')){
