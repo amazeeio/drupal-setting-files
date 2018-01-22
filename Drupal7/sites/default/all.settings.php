@@ -1,10 +1,10 @@
 <?php
 /**
  * @file
- * amazee.io Drupal 7 all environment configuration file.
+ * Lagoon Drupal 7 all environment configuration file.
  *
  * This file should contain all settings.php configurations that are needed by all sites.
- * It contains some defaults that the amazee.io team suggests, please edit them as required.
+ * It contains some suggested defaults, please edit them as required.
  */
 
 // Minimum cache lifetime should be always 0, therefore no automatic cache purging

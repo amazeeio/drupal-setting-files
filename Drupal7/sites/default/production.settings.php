@@ -1,11 +1,11 @@
 <?php
 /**
  * @file
- * amazee.io Drupal 7 production environment configuration file.
+ * Lagoon Drupal 7 production environment configuration file.
  *
  * This file will only be included on production environemnts.
  *
- * It contains some defaults that the amazee.io team suggests, please edit them as required.
+ * It contains some suggested defaults, please edit them as required.
  */
 
 // Don't show any error messages on the site (will still be shown in watchdog)

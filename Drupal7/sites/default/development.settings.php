@@ -1,10 +1,10 @@
 <?php
 /**
  * @file
- * amazee.io Drupal 7 development environment configuration file.
+ * Lagoon Drupal 7 development environment configuration file.
  *
  * This file will only be included on development environments.
- * It contains some defaults that the amazee.io team suggests, please edit them as required.
+ * It contains some suggested defaults, please edit them as required.
  */
 
 // Show all error messages on the site
