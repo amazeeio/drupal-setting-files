@@ -1,0 +1,28 @@
+docker-compose-yaml: docker-compose.yml
+
+project: drupal-example
+endpoint: api-lagoon-master.lagoon.ch.amazee.io:31472
+api: api-lagoon-master.lagoon.ch.amazee.io:80
+
+tasks:
+  post-rollout:
+    - run:
+        name: drush cim
+        command: drush -y cim
+        service: cli
+    - run:
+        name: drush cr
+        command: drush -y cr
+        service: cli
+
+cronjobs:
+  - name: drush cron
+    schedule: "*/15 * * * *"
+    command: drush cron
+    service: cli
+
+# environments:
+#   master:
+#     routes:
+#         - nginx:
+#             - "domain.com"
